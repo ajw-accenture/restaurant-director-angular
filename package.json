@@ -5,7 +5,7 @@
     "build": "ng build",
     "cy:open": "cypress open",
     "fixlint": "npm run lint --fix",
-    "lint": "eslint ./**/*.ts ./**/*.*.ts",
+    "lint": "eslint ./src/**/*.ts ./src/**/*.*.ts",
     "ng": "ng",
     "start": "ng serve",
     "pretest": "npm run lint",
