@@ -1,0 +1,16 @@
+$blue-beach-1: rgba(36,98,168, 1);
+$blue-beach-2: rgba(100,163,237, 1);
+$blue-beach-3: rgba(239,242,242, 1);
+$blue-beach-4: rgba(43,45,47, 1);
+$blue-beach-5: rgba(204,86,100, 1);
+
+$primary: (
+  "anchorAlternative": $blue-beach-3,
+  "stripesOneA": $blue-beach-1,
+  "stripesOneB": $blue-beach-5
+);
+
+@mixin stripes($color1, $color2, $angle: 45deg, $sizeX: 1em, $sizeY: 1em) {
+  background-image: linear-gradient($angle, $color2 20%, $color1 20%, $color1 50%, $color2 50%, $color2 70%, $color1 70%, $color1 100%);
+  background-size: $sizeX $sizeY;
+}

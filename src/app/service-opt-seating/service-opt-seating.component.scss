@@ -1,0 +1,21 @@
+@import '../../theme.scss';
+
+:host {
+  min-height: 300px;
+  min-width: 300px;
+
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: map-get($primary, "stripesOneA");
+  color: map-get($primary, "anchorAlternative");
+  height: 100%;
+  width: 100%;
+
+  &:hover {
+    @include stripes(map-get($primary, "stripesOneA"), map-get($primary, "stripesOneB"));
+  }
+}
